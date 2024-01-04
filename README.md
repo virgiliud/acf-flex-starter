@@ -149,7 +149,7 @@ Update the `_variables.scss` file in `acf-flex-starter/src/scss/` to fit your th
 - Adjust the `$container-width` and breakpoint variables (`$screen-sm`, `$screen-md`, `$screen-lg`, `$screen-xl`) to fit your theme's design across various device sizes.
 
 ### SCSS Mixins for Responsive Design
-Utilize the provided mixins for breakpoints in your SCSS files as follows:
+Utilize the `max-screen` and `min-screen` mixins for breakpoints:
 
 ```scss
 @include max-screen(md) {

@@ -88,7 +88,7 @@ Below is the file structure of the ACF Flexible Content Starter Kit:
 - `/build` - Compiled and minified JavaScript and CSS files.
 - `/imports` - ACF JSON files for importing.
 - `/layouts` - Individual PHP files for each ACF layout.
-- `helper-functions.php` - PHP functions used in outputting and formatting the ACF fields.
+- `helper-functions.php` - PHP functions used to output and format the ACF fields.
 - `flexible-content-loop.php` - Main loop file used to output the ACF Flexible Content fields in your theme.
 - `webpack.config.js` - Configuration file for Webpack, used to define how scripts and styles are compiled and bundled.
 - `package.json` - NPM package dependencies and scripts for the project.

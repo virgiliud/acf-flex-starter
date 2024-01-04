@@ -4,7 +4,7 @@ A starter kit for Advanced Custom Fields (ACF) Flexible Content, providing essen
 
 ## ACF Starter Layouts
 
-The layouts available in the ACF Flexible Content field and their options.
+The available ACF Flexible Content layouts and their options.
 
 ### Media & Text
 

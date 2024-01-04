@@ -78,7 +78,7 @@ A responsive and accessible slider using [Splide.js](https://splidejs.com/), a l
     - Breakpoint (Number Field)
     - Slides Per Row (Number Field)
 
-# Implementing ACF Layouts in Your Theme
+# Adding the Starter Kit to Your Theme
 
 ## File Structure
 

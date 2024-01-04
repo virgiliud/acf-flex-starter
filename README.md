@@ -148,7 +148,7 @@ Update the `_variables.scss` file in `acf-flex-starter/src/scss/` to fit your th
 - Update the `$container` variable to match your theme's container class. Ensure to also update the container class name in the layout files located in `acf-flex-starter/layouts/`.
 - Adjust the `$container-width` and breakpoint variables (`$screen-sm`, `$screen-md`, `$screen-lg`, `$screen-xl`) to fit your theme's design across various device sizes.
 
-### SCSS Mixins
+### SCSS Mixins for Responsive Design
 Utilize the provided mixins for breakpoints in your SCSS files as follows:
 
 ```scss

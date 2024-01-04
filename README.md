@@ -97,7 +97,7 @@ Below is the file structure of the ACF Flexible Content Starter Kit:
 
 1. Locate the provided JSON file (`acf-layouts.json`) in `/acf-flex-starter/imports/`.
 
-2. In your WordPress dashboard, go to `Custom Fields` > `Tools`.
+2. In your WordPress dashboard, go to `ACF` > `Tools`.
 
 3. Under `Import Field Groups`, upload the `acf-layouts.json` file and click `Import File`.
 

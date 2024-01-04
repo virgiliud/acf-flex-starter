@@ -1,0 +1,30 @@
+/* 
+ * MIXINS
+ * Reusable code for common CSS tasks.
+ */
+
+// Breakpoints
+$breakpoints: (
+    sm: $screen-sm, // Small devices
+    md: $screen-md, // Medium devices (tablets)
+    lg: $screen-lg, // Large devices (desktops)
+    xl: $screen-xl // Extra large devices (large desktops)
+);
+
+// Mixin for max-width
+@mixin max-screen($size) {
+    $width: map-get($breakpoints, $size);
+
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+// Mixin for min-width
+@mixin min-screen($size) {
+    $width: map-get($breakpoints, $size) + 1;
+
+    @media (min-width: $width) {
+        @content;
+    }
+}

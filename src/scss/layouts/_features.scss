@@ -1,0 +1,41 @@
+/**
+ * Features Section
+ */
+.features {
+    padding: 3rem 0;
+
+    .#{$container} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;          
+    }
+
+    &__item {
+        text-align: center;
+        flex: 1;
+    }
+
+    // Set flex based on column count
+    @for $i from 1 through 6 {
+        &__columns--#{$i} &__item {
+            @if $i ==1 {
+                flex: 1 0 100%; // Full width for single column
+            }
+
+            @else {
+                flex: 0 0 calc(100% / #{$i} - 3rem); // Width for multiple columns
+            }
+        }
+    }
+}
+
+// Medium devices and larger
+@include min-screen(md) {
+    // Add custom CSS
+}
+
+// Medium devices and smaller
+@include max-screen(md) {
+    // Add custom CSS
+}

@@ -1,0 +1,50 @@
+/**
+ * Slider Section
+ */
+.slider {
+    padding: 3rem 0;
+
+    .splide__slide {
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .splide__arrows {
+        .splide__arrow {
+            svg {
+                fill: none;
+            }
+        }
+    }
+
+    .splide__pagination {
+        bottom: -2rem;
+        &__page {
+            background-color: rgba(0, 0, 0, 0.5);
+    
+            &:hover,
+            &:focus {
+                border: 2px solid #000;
+                background-color: #000;
+            }
+    
+            &.is-active {
+                background-color: #000;
+            }
+        }
+    } 
+}
+
+// Medium devices and larger
+@include min-screen(md) {
+    // Add custom CSS
+}
+
+// Medium devices and smaller
+@include max-screen(md) {
+    // Add custom CSS
+}

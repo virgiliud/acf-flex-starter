@@ -28,13 +28,8 @@ if (have_rows('layouts')):
             set_query_var('slider_id', 'slider-' . $slider_counter);
         }
 
-        // Define the layout file path
-        $layout_file = get_template_directory() . '/acf-flex-starter/layouts/' . $layout . '.php';
-
-        // Check if the layout file exists and include it
-        if (file_exists($layout_file)) {
-            include($layout_file);
-        }
+        // Include the layout file
+        get_template_part('acf-flex-starter/layouts/' . $layout);
 
     endwhile;
 

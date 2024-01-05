@@ -1,5 +1,7 @@
 # ACF Flexible Content Layouts Starter Kit
 
+![acf-flex-thumb](https://github.com/virgiliud/acf-flex-starter/assets/3076742/124fe9fe-0acd-4974-89fc-539f1e61f368)
+
 A starter kit for Advanced Custom Fields (ACF) Flexible Content, providing essential layouts commonly used in WordPress themes. The kit uses minimal CSS Flexbox-based layouts and adaptable ACF configurations, making it easy to implement and modify. Additionaly, it includes Webpack and npm for easy compilation and minification of assets.
 
 ## ACF Starter Layouts

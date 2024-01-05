@@ -39,4 +39,3 @@ if (have_rows('layouts')):
     endwhile;
 
 endif;
-?>

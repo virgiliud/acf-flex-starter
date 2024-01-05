@@ -36,13 +36,3 @@
         background-color: #000;
     }  
 }
-
-// Medium devices and larger
-@include min-screen(md) {
-    // Add custom CSS
-}
-
-// Medium devices and smaller
-@include max-screen(md) {
-    // Add custom CSS
-}

@@ -8,7 +8,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 3rem;          
+        gap: 3rem;   
+
+        @include max-screen(md) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -28,14 +32,4 @@
             }
         }
     }
-}
-
-// Medium devices and larger
-@include min-screen(md) {
-    // Add custom CSS
-}
-
-// Medium devices and smaller
-@include max-screen(md) {
-    // Add custom CSS
 }

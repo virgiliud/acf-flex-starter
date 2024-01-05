@@ -28,11 +28,6 @@
 
 // Medium devices and smaller
 @include max-screen(md) {
-    // Stack flex items vertically
-    .#{$container} {
-        flex-direction: column;
-    }
-
     // Flex Order
     .mobile-order-first {
         order: -1;

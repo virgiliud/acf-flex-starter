@@ -7,19 +7,13 @@
     .#{$container} {
         display: flex;
         gap: 3rem;
+
+        @include max-screen(md) {
+            flex-direction: column;
+        }
     }
 
     &__block {
         flex: 1;
     }
-}
-
-// Medium devices and larger
-@include min-screen(md) {
-    // Add custom CSS
-}
-
-// Medium devices and smaller
-@include max-screen(md) {
-    // Add custom CSS
 }

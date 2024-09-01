@@ -25,23 +25,25 @@ function get_css_classes(...$classes) {
  * @return string
  */
 function get_acf_link($link, $class = '') {
-    if (!empty($link)) {
-        // Extract link attributes
-        $url = esc_url($link['url']);
-        $title = esc_html($link['title']);
-        $target = $link['target'] ? esc_attr($link['target']) : '_self';
-        $rel = $link['target'] == '_blank' ? 'noopener noreferrer' : '';
-
-        // Format the anchor tag
-        return sprintf('<a href="%s"%s target="%s"%s>%s</a>',
-            $url,
-            $class ? ' class="' . esc_attr($class) . '"' : '',
-            $target,
-            $rel ? ' rel="' . $rel . '"' : '',
-            $title
-        );
+    if (!is_array($link) || empty($link['url'])) {
+        return '';
     }
-    return '';
+
+    // Extract and sanitize link attributes
+    $url = esc_url($link['url']);
+    $title = esc_html($link['title'] ?? '');
+    $target = esc_attr($link['target'] ?? '_self');
+    $rel = ($target === '_blank') ? 'noopener noreferrer' : '';
+
+    // Format the anchor tag
+    return sprintf(
+        '<a href="%s" %s target="%s" rel="%s">%s</a>',
+        $url,
+        $class ? 'class="' . esc_attr($class) . '"' : '',
+        $target,
+        esc_attr($rel),
+        $title
+    );
 }
 
 /**
